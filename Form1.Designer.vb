@@ -40,6 +40,7 @@ Partial Class Form1
         Button2 = New Button()
         Button1 = New Button()
         FolderBrowserDialog1 = New FolderBrowserDialog()
+        ProgressBar_restore = New ProgressBar()
         GroupBox1.SuspendLayout()
         GroupBox2.SuspendLayout()
         GroupBox3.SuspendLayout()
@@ -200,11 +201,20 @@ Partial Class Form1
         Button1.Text = "Steam Factorio folder"
         Button1.UseVisualStyleBackColor = True
         ' 
+        ' ProgressBar_restore
+        ' 
+        ProgressBar_restore.Location = New Point(12, 396)
+        ProgressBar_restore.Maximum = 8
+        ProgressBar_restore.Name = "ProgressBar_restore"
+        ProgressBar_restore.Size = New Size(572, 31)
+        ProgressBar_restore.TabIndex = 3
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(596, 398)
+        ClientSize = New Size(596, 439)
+        Controls.Add(ProgressBar_restore)
         Controls.Add(GroupBox3)
         Controls.Add(GroupBox2)
         Controls.Add(GroupBox1)
@@ -236,4 +246,5 @@ Partial Class Form1
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents FolderBrowserDialog1 As FolderBrowserDialog
+    Friend WithEvents ProgressBar_restore As ProgressBar
 End Class
