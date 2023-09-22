@@ -4,7 +4,7 @@ WIP Project.
 Use at your own risk.
 
 Portable version:
-Download teh files from \release\portable and store them on your computer.
+Download the files from \release\portable and store them on your computer.
 Start the exe file.
 
 Setup the 3 folders:
